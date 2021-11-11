@@ -15,6 +15,6 @@ print("Hello World: 10")
 # Question 4 Solution
 def get_m(p, r, l):
     comp = pow((1 + r/(12 * 100)), l)
-    return (p * comp * (r/1200))/(comp-1)
+    return round((p * comp * (r/1200))/(comp-1))
 
 print(get_m(800000, 6, 103))

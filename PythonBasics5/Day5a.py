@@ -12,14 +12,23 @@ def get_bmi_grade(bmi):
         return "obese"
 
 if __name__ == '__main__':
-    num_people = int(input("input data:\n"))
+    try:
+        num_people = int(input("input data:\n"))
+    except:
+        print("Expected arg: int")
+        exit(0)
     res_lst = []
     while num_people > 0:
-        args = input()
-        [weight, height] = args.split(" ")
-        bmi = get_bmi(float(weight), float(height))
-        grade = get_bmi_grade(bmi)
-        res_lst.append(grade)
+        try:
+            args = input()
+            [weight, height] = args.split(" ")
+            bmi = get_bmi(float(weight), float(height))
+            grade = get_bmi_grade(bmi)
+            res_lst.append(grade)
+        except ZeroDivisionError:
+            print("Cannot divide by 0")
+        except:
+            print("Expected args: int int")
         num_people -= 1
     
     print("answer:")

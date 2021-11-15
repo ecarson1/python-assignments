@@ -1,0 +1,8 @@
+17:54: [INFO]: Logfile was cleared
+17:54: [INFO]: Filename expedia_report_monthly_january_2018.xlsx was parsed to get month 1 of 2018
+17:54: [INFO]: Workbook loaded from expedia_report_monthly_january_2018.xlsx
+17:54: [INFO]: Summary Rolling MoM sheet loaded
+17:54: [INFO]: Results for month 1 of 2018: Calls Offered: 16915, Abandon after 30s: 2.32%, FCR: 86.5%, DSAT: 14.2%, CSAT: 78.3%
+17:54: [INFO]: VOC Rolling MoM sheet loaded
+17:54: [INFO]: Results for month 1 of 2018: Promoters Score: 256, Promoters Grade: Good, Passives Score: 86, Passives grade: Bad, Detractors Score: 86, Detractors Grade: Bad
+17:54: [INFO]: Program ended

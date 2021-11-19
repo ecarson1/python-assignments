@@ -5,12 +5,12 @@ df = pd.read_csv('2_pandas_Salaries.csv')
 
 #Question 1
 print("QUESTION 1")
-head = df.head(1)
+head = df.head()
 print(head)
 
 #Question 2
 print("QUESTION 2")
-df.info(verbose=False)
+df.info()
 
 #Question 3
 print("QUESTION 3")
@@ -71,7 +71,7 @@ print(f"There are {num_jobs} job titles represented by only one person")
 
 #Question 13
 print("QUESTION 13")
-num_chief = len(df[df['JobTitle'].str.contains("chief", case=False)])
+num_chief = len(df[df['JobTitle'].str.contains("Chief", case=False)])
 print(f"There are {num_chief} people with Chief in their job title")
 
 #Question 14
